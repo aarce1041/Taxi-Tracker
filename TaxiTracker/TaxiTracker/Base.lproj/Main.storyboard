@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,20 +15,59 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TaxiTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxi Tracker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVF-10-2Hg">
-                                <rect key="frame" x="138" y="44" width="138" height="31"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxp-Zb-vLa">
+                                <rect key="frame" x="47.666666666666657" y="376" width="120" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.2947324019" blue="0.90760361160000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fh3-Ae-hDL"/>
+                                    <constraint firstAttribute="height" constant="60" id="qkK-cJ-YnQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
+                                <state key="normal" title="Lyft">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXR-1I-Gj1">
+                                <rect key="frame" x="207.66666666666663" y="376" width="120" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="AUG-Xg-c6m"/>
+                                    <constraint firstAttribute="height" constant="60" id="azD-Er-8XJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                <state key="normal" title="Uber">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVF-10-2Hg">
+                                <rect key="frame" x="87.666666666666686" y="44" width="200" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="dnD-LX-90d"/>
+                                    <constraint firstAttribute="width" constant="200" id="pyZ-mC-DEM"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Taxi Tracker">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EVF-10-2Hg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CO1-Ps-g9c"/>
-                            <constraint firstItem="EVF-10-2Hg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-388.5" id="WWA-XK-3ST"/>
+                            <constraint firstItem="EVF-10-2Hg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKw-E5-0xk"/>
+                            <constraint firstItem="RXR-1I-Gj1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MlP-k3-vjg"/>
+                            <constraint firstItem="EVF-10-2Hg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z0P-f9-1fO"/>
+                            <constraint firstItem="kxp-Zb-vLa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="alG-R7-PoD"/>
+                            <constraint firstItem="RXR-1I-Gj1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="ewg-Cm-gKG"/>
+                            <constraint firstItem="kxp-Zb-vLa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gdu-x9-Rlp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
